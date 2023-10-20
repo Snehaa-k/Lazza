@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lazza Icecreams</title>
+    <link rel="stylesheet" href="./css/bootstrap.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+  
+  <div class="head sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light nav-color sticky-top">
+      <div class="container-fluid px-md-4">
+        <a class="navbar-brand" href="#"><img src="./images/logoh.png" alt="logo image " class="img-fluid main-logo-imaage"
+            width="130">
+        </a>
+
+        <div class="icons d-flex justify-content-around ms-4 d-md-none">
+          <img src="./images/search.png" class="" alt="">
+          <img src="./images/cart.png" class="ms-4" alt="" onclick="cart()">
+          <span class="cart_items" id="cntcart">0</span>
+          <img src="./images/account.png" onclick="login()" class="ms-4" alt="">
+        </div>
+        <!-- toggle button -->
+        <button class="navbar-toggler toggler-color bg-white " type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link" href="https://lazza.co.in/products">PRODUCTS</a>
+            <a class="nav-link" href="https://lazza.co.in/offers">OFFERS</a>
+            <a class="nav-link" href="https://lazza.co.in/aboutus">ABOUT US</a>
+            <a class="nav-link" href="https://lazza.co.in/contactus">CONTACT US</a>
+          </div>
+        </div>
+        <div class="icons d-flex justify-content-around ms-4 d-none d-md-inline">
+          <img src="./images/search.png" class="" alt="">
+          <img src="./images/cart.png" class="ms-4" alt="" onclick="cart()">
+          <span class="cart_items" id="cntcart">0</span>
+          <img src="./images/account.png" onclick="login()" class="ms-4" alt="">
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+
+  
+<!-- next page of image -->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/imagmain.png" class="img-fluid">
+     
+    </div>
+   
+   
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- next section -->
+<section class="product-section" id="productt">
+  <div class="container-fluid p-5">
+    <h3 class="text-center display-5 mt-2" id="text1">
+      WIDE RANGE OF OUR PRODUCTS</h3>
+    <div class="row mt-5">
+      <div class="col-md-4 col-sm-offset-2">
+        <div class="sm-margin visible-xs">
+          <div class="card border-0">
+            <img src="./images/sugerfree.png" class="card-img-top product-image img-fluid">
+            <div class="card-body">
+              <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">SUGAR FREE</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-offset-2">
+        <div class="mobile-margin visible-sm">
+          <div class="card border-0">
+            <img src="./images/basicseries.png" class="card-img-top img-fluid product-image" >
+            <div class="card-body">
+              <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">BASIC SERIES</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-offset-2 ">
+        <div class="mobile-margin visible-xs">
+          <div class="card border-0 mt-sm-5">
+            <img src="./images/induls.png" class="card-img-top img-fluid product-image">
+            <div class="card-body">
+              <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">INDULGENCE SERIES</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4 col-sm-offset-2">
+        <div class="mobile-margin visible-xs">
+          <div class="card border-0">
+            <img src="./images/premi.png" class="card-img-top product-image img-fluid" >
+            <div class="card-body">
+              <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">PREMIUM SERIES</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-offset-2">
+        <div class="mobile-margin visible-xs">
+          <div class="card border-0">
+            <img src="./images/ethis.png" class="card-img-top img-fluid product-image" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">ETHNIC SERIES</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-offset-2 ">
+        <div class="mobile-margin visible-xs">
+          <div class="card border-0 mt-sm-5">
+            <img src="./images/naturals.png" class="card-img-top img-fluid product-image" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">NATURAL SERIES</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="row mt-5">
+        <div class="col-md-4 col-sm-offset-2">
+          <div class="mobile-margin visible-xs">
+            <div class="card border-0">
+              <img src="./images/botiqu.png" class="card-img-top product-image img-fluid" alt="...">
+              <div class="card-body">
+                <p class="card-text text-center card-item-text display-7 h3"><small class="text-muted">BOUTIQUE SERIES</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="third-item-section">
+    <div class="third-section-image">
+      <img src="./images/footer1.png" alt="awsome free" class="d-block w-100">
+    </div>
+  </section>
+  <!-- footer section-------------- -->
+  <footer>
+    <div class="container-fluid footer-container">
+      <div class="row border-bottom-1 footer-row ps-md-1 pe-md-5 px-sm-2">
+
+        <!-- logo left side -->
+
+        <div class="col-md-2 col-sm-12 mt-1 pt-sm-3 footer-padding visible-xs ">
+          <img src="./images/footer-logo-simons.png" alt="" class="footer-logo-left simons-logo mx-auto">
+        </div>
+
+       <!-- help -->
+       <div class="col-md-2 col-sm-12">
+        <div class="footer-padding visible-xs footer-text">
+          <h5 class="text-uppercase fw-bold mb-4"> HELP </h5>
+          <p>Track Your Order</p>
+          <p>Chat with Us</p>
+          <p>Support</p>
+        </div>
+      </div>
+      <!-- ABOUT -->
+      <div class="col-md-2 col-sm-12 ">
+        <div class="footer-padding visible-xs footer-text">
+          <h5 class="text-uppercase fw-bold mb-4"> ABOUT </h5>
+          <p>Our History</p>
+          <p>Privacy Policy</p>
+          <p>Cancellation Policy</p>
+        </div>
+      </div>
+  <!-- products -->
+
+  <div class="col-md-2 col-sm-12" id="aboutus">
+    <div class="footer-padding visible-xs footer-text">
+      <h5 class="text-uppercase fw-bold mb-4 text-height"> PRODUCTS</h5>
+      <p> <a href="#!" class="text-reset">Our Products</a> </p>
+      <p> <a href="#!" class="text-reset">Offers</a> </p>
+      <p> <a href="#!" class="text-reset">About Us</a> </p>
+      <p> <a href="#!" class="text-reset">Contact Us</a> </p>
+    </div>
+  </div>
+    <!-- contact us -->
+
+    <div class="col-md-2 col-sm-12">
+      <div class="footer-padding visible-xs footer-text">
+        <h5 class="text-uppercase fw-bold mb-4">Contact US</h5>
+        <p>9946037777</p>
+        <p> support@lazza.co.in</p>
+        <div class="social-media-link d-flex">
+          <p><a href=""><i class="bi bi-facebook ms-2 social-media-link"></i></a></p>
+          <p><a href=""><i class="bi bi-instagram ms-2  social-media-link"></i></a></p>
+          <p><a href=""><i class="bi bi-pinterest ms-2 social-media-link"></i></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-12 mt-1">
+      <div class="footer-padding visible-xs footer-text">
+        <img src="./img/footer-logo-lazza.webp" alt="" class="footer-logo-left golden-left mx-auto">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright -->
+
+<div class="container-fluid">
+  <div class="copywrite-section d-flex justify-content-sm-between gap-xs-2 p-4">
+    <div class="copy-write-text col-sm-offset-2">
+      <p>© Lazza Ice Creams - 2022</p>
+    </div>
+    <div class="copy-write-text">
+      <p>Site Powered By Igen Software Solutions</p>
+    </div>
+  </div>
+</div>
+<!-- Copyright -->
+</footer>
+ <!-- whatsapp -->
+ <div class="whatsapp">
+  <img class="whatsapp" src="./images/whatsap.png" alt="whatsapp-image">
+</div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>   
+    <script src="js/script.js"></script>  
+</body>
+</html>

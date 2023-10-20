@@ -1,0 +1,164 @@
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-weight: 100;
+}
+
+
+nav {
+    background-color: black;
+}
+
+.nav-color {
+    background-color: black !important;
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.toggler-color {
+    color: white;
+   
+}
+
+
+.cart_items {
+    width: 20px;
+    height: 20px;
+    background: red;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: -8px;
+    position: relative;
+    top: -9px;
+    color: white;
+}
+
+.icons img {
+    width: 1.3rem;
+}
+
+
+.home-img {
+    width: 100%;
+    height: 88vh;
+}
+.image2{
+    width: 62%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.moodscontainer{
+    background-color: white;
+    height:100vh;
+    width:100%;
+}
+.col-md-12 h1{
+    text-align: center;
+    margin-top: 42px;
+    font-size: 198%;
+    font-weight: 200;
+}
+#innerimg1{
+    margin-left: 65px;
+    width: 358px;
+
+}
+.navbar{
+    
+    background-color: black;
+    height:14vh;
+    
+}
+#imglog{
+    width: 88px;
+    position: absolute;
+    left: 0;
+ 
+}
+.third-section {
+    margin-top: 8rem;
+}
+
+.home-third-container {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+.footer-logo-left {
+    width: 12rem;
+}
+
+footer {
+    background-color: black;
+    color: #be9509;
+    ;
+}
+
+.footer-row {
+    border-bottom: .2px solid rgb(124, 123, 123);
+}
+.footer-padding {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    text-align: left;
+}
+.social-media-link {
+    color: #be9509;
+    width: 1.2rem;
+}
+.text-height {
+    line-height: 1.5rem;
+}
+.head {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#carouselExampleIndicators {
+    z-index: 0;
+}
+.footer-logo-left {
+    width: 8.5rem;
+}
+.whatsapp {
+    width: 4.1rem;
+    position: fixed;
+    z-index: 1;
+    bottom: 2rem;
+    right: 1.5rem;
+    animation: shake 0.5s;
+    animation-iteration-count: 20;
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
+    .main-logo-imaage {
+        width: 5rem;
+    }
+}
+
+/* text - items */
+.footer-text {
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.copy-write-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
